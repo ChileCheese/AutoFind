@@ -1,0 +1,60 @@
+import re
+
+User_File = (input("enter name of file:"))
+User_input = open(User_File)
+Essay = User_input.read()
+print(Essay)
+User_input.close()
+
+Revision1 = re.compile(r"'t")
+Searching = Revision1.finditer(Essay)
+for revisions in Searching:
+    print(revisions)
+Revision2 = re.compile(r'\s[i|I]\s')
+Searching = Revision2.finditer(Essay)
+for revisions in Searching:
+    print(revisions)
+Revision3 = re.compile(r'\sme\s')
+Searching = Revision3.finditer(Essay)
+for revisions in Searching:
+    print(revisions)
+Revision4 = re.compile(r'\syou\s')
+Searching = Revision4.finditer(Essay)
+for revisions in Searching:
+    print(revisions)
+Revision5 = re.compile(r'\she\s')
+Searching = Revision5.finditer(Essay)
+for revisions in Searching:
+    print(revisions)
+Revision6 = re.compile(r'\shim\s')
+Searching = Revision6.finditer(Essay)
+for revisions in Searching:
+    print(revisions)
+Revision7 = re.compile(r'\sshe\s')
+Searching = Revision7.finditer(Essay)
+for revisions in Searching:
+    print(revisions)
+Revision8 = re.compile(r'\sher\s')
+Searching = Revision8.finditer(Essay)
+for revisions in Searching:
+    print(revisions)
+Revision9 = re.compile(r'\sit\s')
+Searching = Revision9.finditer(Essay)
+for revisions in Searching:
+    print(revisions)
+Revision10 = re.compile(r'\swe\s')
+Searching = Revision10.finditer(Essay)
+for revisions in Searching:
+    print(revisions)
+Revision11 = re.compile(r'\sus\s')
+Searching = Revision11.finditer(Essay)
+for revisions in Searching:
+    print(revisions)
+Revision12 = re.compile(r'\sthey\s')
+Searching = Revision12.finditer(Essay)
+for revisions in Searching:
+    print(revisions)
+Revision13 = re.compile(r'\sthem\s')
+Searching = Revision13.finditer(Essay)
+for revisions in Searching:
+    print(revisions)
